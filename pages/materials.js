@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-const Home = () => (
+const Materials = () => (
 	<div>
 		<h1>Next.js on the [JAMstack](https://jamstack.org)</h1>
 
@@ -9,9 +9,7 @@ const Home = () => (
 			Hooray 🎉 - you've built this with{" "}
 			<a href="https://nextjs.org">Next.js</a>!
 		</h3>
-		<a href="./software">Software</a>
-		<a href="./materials">Materials</a>
 	</div>
 );
 
-export default Home;
+export default Materials;
