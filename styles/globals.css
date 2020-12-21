@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	background-size: cover;
+	background-image: url(https://unsplash.com/photos/XAxEp-NKBiQ/download?force=true&w=2400);
+}
