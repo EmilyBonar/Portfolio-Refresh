@@ -17,9 +17,9 @@ const Home = () => (
 			<a href="./projects">Projects</a>
 		</div>
 
-		<div className={`${cardClasses} flex overflow-hidden`}>
+		<div className={`${cardClasses} flex flex-wrap overflow-hidden`}>
 			<div
-				className="inline h-auto w-56 bg-cover "
+				className="w-56 bg-cover"
 				style={{ backgroundImage: `url(/profPic.jpg)` }}
 			></div>
 			<div className="flex-auto p-8">
