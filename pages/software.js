@@ -3,10 +3,15 @@ import Head from "next/head";
 import classnames from "classnames";
 
 let cardClasses =
-	"rounded bg-white p-4 border-2 border-black flex-grow m-2 box-border max-w-xl";
+	"w-5/6 lg:w-3/4 m-auto bg-gray-100 opacity-95 p-8 rounded shadow-lg";
 
 const Software = () => (
-	<div className="flex bg-white flex-wrap">
+	<div className="flex flex-col gap-4 mb-4">
+		<div className="flex w-5/6 lg:w-3/4 m-auto gap-8 text-xl text-gray-900">
+			<a href="./">Home</a>
+			<a href="./software">Software</a>
+			<a href="./materials">Materials</a>
+		</div>
 		<div className={cardClasses}>
 			At the Army Research Lab, I've architected software controlling an aerosol
 			deposition machine, capable of depositing layers of powder microns thick.
