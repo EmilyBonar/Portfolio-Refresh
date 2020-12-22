@@ -8,7 +8,7 @@ function Skill(props) {
 }
 
 const cardClasses =
-	"w-5/6 lg:w-3/4 m-auto bg-gray-100 opacity-95 p-8 rounded shadow-lg";
+	"w-5/6 lg:w-3/4 m-auto bg-white opacity-90 rounded shadow-lg";
 
 const Home = () => (
 	<div className="flex flex-col gap-4 mb-4">
@@ -17,11 +17,7 @@ const Home = () => (
 			<a href="./projects">Projects</a>
 		</div>
 
-		<div
-			className={
-				"w-5/6 lg:w-3/4 m-auto bg-gray-100 opacity-95 rounded shadow-lg flex overflow-hidden"
-			}
-		>
+		<div className={`${cardClasses} flex overflow-hidden`}>
 			<div
 				className="inline h-auto w-56 bg-cover "
 				style={{ backgroundImage: `url(/profPic.jpg)` }}
@@ -33,7 +29,7 @@ const Home = () => (
 				</h3>
 			</div>
 		</div>
-		<div className={cardClasses}>
+		<div className={`${cardClasses} p-8`}>
 			<p className="mb-3">
 				I graduated from <span className="font-semibold">Rice University</span>{" "}
 				in 2018 with a degree in Materials Science and Nanoengineering and a
@@ -60,7 +56,7 @@ const Home = () => (
 				of all types.
 			</p>
 		</div>
-		<div className={cardClasses}>
+		<div className={`${cardClasses} p-8`}>
 			<h3 className="text-xl mb-2">Technical Skills</h3>
 			<div className="flex gap-4 flex-wrap">
 				<Skill name="JavaScript" />
