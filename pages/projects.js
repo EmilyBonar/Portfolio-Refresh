@@ -8,6 +8,7 @@ const Projects = () => (
 		<div className="flex w-5/6 lg:w-3/4 m-auto gap-8 text-xl text-gray-900 mt-8">
 			<a href="./">Home</a>
 			<a href="./projects">Projects</a>
+			<a href="./resume">Resume</a>
 		</div>
 		<div className="grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 gap-4 w-5/6 lg:w-3/4 m-auto">
 			{projects.map((project) => (

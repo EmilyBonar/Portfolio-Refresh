@@ -24,6 +24,7 @@ const Home = () => (
 		<div className="flex w-5/6 lg:w-3/4 m-auto gap-8 text-xl text-gray-900 mt-8">
 			<a href="./">Home</a>
 			<a href="./projects">Projects</a>
+			<a href="./resume">Resume</a>
 		</div>
 
 		<div className={`${cardClasses} flex flex-wrap overflow-hidden`}>
