@@ -11,18 +11,19 @@ export const projects = [
 	{
 		title: "LookOutside",
 		media: "/LookOutside.png",
-		technologies: "React | TailwindCSS | REST | Axios | Node.js",
+		technologies:
+			"React | TailwindCSS | REST | Google Maps | OpenWeather | Disease.sh | Axios | Node.js",
 		copy:
-			"A dashboard that could provide information about the outside world without leaving the house. It uses Google Maps, OpenWeather, and Disease.sh REST APIs to create a summery of weather and COVID conditions in a given area of the US.",
+			"A dashboard that creates a summery of weather and COVID conditions in a given area of the US.",
 		gitLink: "https://github.com/EmilyBonar/lookoutside",
 		liveLink: "https://www.emilybonar.com/LookOutside/",
 	},
 	{
 		title: "TuneTester",
 		media: "/TuneTester.jpg",
-		technologies: "React | REST | Node.js",
+		technologies: "React | REST | Spotify | Node.js",
 		copy:
-			"A React single-page application that allows you to put in the URL of a Spotify playlist, and returns a visualization of the playlist based on duration and danceability, retrieved from the Spotify REST API.",
+			"A React single-page application that allows you to put in the URL of a Spotify playlist, and returns a visualization of the playlist based on duration and danceability.",
 		gitLink: "https://github.com/EmilyBonar/TuneTester",
 		liveLink: "https://www.emilybonar.com/TuneTester/",
 	},
@@ -40,7 +41,7 @@ export const projects = [
 		media: "/Nearest Named Color.png",
 		technologies: "HTML | CSS | JavaScript",
 		copy:
-			"This tool lets uses JavaScript to let you pick a color and tells you the nearest CSS named color in RGB space. I employed a simple Euclidian distance formula, calculating the color distance for all of the 140 named colors in comparison to the one color selected.",
+			"This tool lets uses JavaScript to let you pick a color and tells you the nearest CSS named color in RGB space.",
 		gitLink: "https://github.com/EmilyBonar/NearestNamedColor",
 		liveLink: "https://www.emilybonar.com/NearestNamedColor/",
 	},

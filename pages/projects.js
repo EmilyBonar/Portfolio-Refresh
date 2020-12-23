@@ -9,7 +9,7 @@ const Projects = () => (
 			<a href="./">Home</a>
 			<a href="./projects">Projects</a>
 		</div>
-		<div className="grid grid-flow-row-dense lg:grid-cols-3 gap-4 w-5/6 lg:w-3/4 m-auto">
+		<div className="grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 gap-4 w-5/6 lg:w-3/4 m-auto">
 			{projects.map((project) => (
 				<ProjectCard
 					title={project.title}
