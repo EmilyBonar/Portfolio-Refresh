@@ -1,33 +1,30 @@
 import React from "react";
 import Head from "next/head";
 
-let cardClasses =
-	"w-5/6 lg:w-3/4 m-auto bg-white opacity-90 rounded shadow-lg p-8";
-
 function MediaCard(props) {
-	if (!props.media) {
-		return Card(props);
-	}
 	return (
 		<div
-			className={`m-auto bg-white opacity-90 rounded shadow-lg overflow-hidden pb-8 flex self-start`}
+			className={`m-auto bg-white opacity-90 rounded shadow-lg overflow-hidden pb-8 flex flex-col`}
 		>
-			<div className="flex flex-col">
-				<img src={props.media} className="w-full" />
-				<h1 className="font-bold text-2xl px-8 pt-4 tracking-wide">
-					{props.title}
-				</h1>
-				<div className="pt-4 px-8">{props.copy}</div>
-
-				<pre className="pl-8">{props.code}</pre>
-				<div className="flex m-auto mt-4">
+			<img src={props.media} className="w-full" />
+			<h1 className="font-bold text-2xl px-8 pt-4 tracking-wide">
+				{props.title}
+			</h1>
+			<p className="capitalize tracking-wider text-gray-600">
+				{props.technologies}
+			</p>
+			<div className="pt-4 px-8">{props.copy}</div>
+			<div className="flex m-auto mt-4">
+				{props.liveLink && (
 					<a href={props.liveLink}>
 						<img className="mx-4" width="48" src={"/icon-link.svg"}></img>
 					</a>
+				)}
+				{props.gitLink && (
 					<a href={props.gitLink}>
 						<img className="mx-4" width="48" src={"/GitHub-Mark.svg"}></img>
 					</a>
-				</div>
+				)}
 			</div>
 		</div>
 	);
@@ -39,7 +36,7 @@ const Projects = () => (
 			<a href="./">Home</a>
 			<a href="./projects">Projects</a>
 		</div>
-		<div className="grid grid-flow-row-dense lg:grid-cols-3 gap-4 w-5/6 lg:w-3/4 m-auto items-start">
+		<div className="grid grid-flow-row-dense lg:grid-cols-3 gap-4 w-5/6 lg:w-3/4 m-auto">
 			<MediaCard
 				title="LookOutside"
 				media="/LookOutside.png"
