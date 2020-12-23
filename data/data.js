@@ -1,3 +1,15 @@
+export const skills = [
+	"JavaScript",
+	"Node.js",
+	"React",
+	"HTML",
+	"CSS",
+	"Python",
+	"MATLAB",
+	"LabVIEW",
+	"REST",
+];
+
 export const projects = [
 	{
 		title: "SearchBlocker",

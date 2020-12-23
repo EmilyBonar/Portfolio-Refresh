@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { skills } from "../data/data.js";
 
 function Skill(props) {
 	const skillClasses =
@@ -42,7 +43,7 @@ const Home = () => (
 				<span className="font-semibold">MATLAB</span>,{" "}
 				<span className="font-semibold">LabVIEW</span>, and more recently,
 				making things using <span className="font-semibold">HTML</span>,{" "}
-				<span class="font-semibold">CSS</span>, and{" "}
+				<span className="font-semibold">CSS</span>, and{" "}
 				<span className="font-semibold">JavaScript</span>. I'm attending a
 				virtual batch at the{" "}
 				<a href="https://www.recurse.com/" className="font-semibold">
@@ -59,14 +60,9 @@ const Home = () => (
 		<div className={`${cardClasses} p-8`}>
 			<h3 className="text-xl mb-2">Technical Skills</h3>
 			<div className="flex gap-4 flex-wrap">
-				<Skill name="JavaScript" />
-				<Skill name="Node" />
-				<Skill name="React" />
-				<Skill name="HTML" />
-				<Skill name="CSS" />
-				<Skill name="Python" />
-				<Skill name="MATLAB" />
-				<Skill name="LabVIEW" />
+				{skills.map((skill) => (
+					<Skill name={skill} />
+				))}
 			</div>
 		</div>
 	</div>
