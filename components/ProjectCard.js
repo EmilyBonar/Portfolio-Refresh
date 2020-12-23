@@ -3,14 +3,14 @@ export function ProjectCard(props) {
 		<div
 			className={`m-auto bg-white opacity-90 rounded shadow-lg overflow-hidden pb-8 flex flex-col`}
 		>
-			<img src={props.media} className="w-full" />
+			<img src={props.media} className="w-full h-64 object-cover object-top" />
 			<h1 className="font-bold text-2xl px-8 pt-4 tracking-wide">
 				{props.title}
 			</h1>
-			<p className="capitalize tracking-wider text-gray-600">
+			<p className="uppercase tracking-widest px-8 text-xs pt-1 text-gray-600">
 				{props.technologies}
 			</p>
-			<div className="pt-4 px-8">{props.copy}</div>
+			<div className="pt-2 px-8">{props.copy}</div>
 			<div className="flex m-auto mt-4">
 				{props.liveLink && (
 					<a href={props.liveLink}>
