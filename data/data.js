@@ -10,6 +10,11 @@ export const skills = [
 	"REST",
 ];
 
+export const socialLinks = [
+	{ icon: "/LI-In-Bug.png", link: "https://www.linkedin.com/in/emilybonar/" },
+	{ icon: "/GitHub-Mark.svg", link: "https://github.com/EmilyBonar" },
+];
+
 export const projects = [
 	{
 		title: "SearchBlocker",
@@ -35,7 +40,7 @@ export const projects = [
 		media: "/TuneTester.jpg",
 		technologies: "React | REST | Spotify | Node.js",
 		copy:
-			"A React single-page application that allows you to put in the URL of a Spotify playlist, and returns a visualization of the playlist based on duration and danceability.",
+			"Allows you to put in the URL of a Spotify playlist, and returns a visualization of the playlist based on duration and danceability.",
 		gitLink: "https://github.com/EmilyBonar/TuneTester",
 		liveLink: "https://www.emilybonar.com/TuneTester/",
 	},
@@ -53,7 +58,7 @@ export const projects = [
 		media: "/Nearest Named Color.png",
 		technologies: "HTML | CSS | JavaScript",
 		copy:
-			"This tool lets uses JavaScript to let you pick a color and tells you the nearest CSS named color in RGB space.",
+			"Lets you pick a color and tells you the nearest CSS named color in RGB space.",
 		gitLink: "https://github.com/EmilyBonar/NearestNamedColor",
 		liveLink: "https://www.emilybonar.com/NearestNamedColor/",
 	},

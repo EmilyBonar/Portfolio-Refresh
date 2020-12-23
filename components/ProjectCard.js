@@ -18,8 +18,8 @@ export function ProjectCard(props) {
 					</a>
 				)}
 				{props.gitLink && (
-					<a href={props.gitLink}>
-						<img className="mx-4" width="48" src={"/GitHub-Mark.svg"}></img>
+					<a href={props.gitLink} className="mx-4">
+						<img width="48" src={"/GitHub-Mark.svg"}></img>
 					</a>
 				)}
 			</div>

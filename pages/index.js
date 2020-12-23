@@ -1,11 +1,19 @@
 import React from "react";
 import Head from "next/head";
-import { skills } from "../data/data.js";
+import { skills, socialLinks } from "../data/data.js";
 
 function Skill(props) {
 	const skillClasses =
 		"px-2 py-1 bg-blue-200 text-gray-900 rounded-lg hover:bg-blue-300 text-lg";
 	return <p className={skillClasses}>{props.name}</p>;
+}
+
+function Logo(props) {
+	return (
+		<a href={props.link} className="mx-2">
+			<img src={props.icon} className="w-12" />
+		</a>
+	);
 }
 
 const cardClasses =
@@ -23,11 +31,16 @@ const Home = () => (
 				className="w-56 bg-cover"
 				style={{ backgroundImage: `url(/profPic.jpg)` }}
 			></div>
-			<div className="flex-auto p-8">
-				<h1 className="text-5xl lg:text-7xl mb-4 text-right">Emily Bonar</h1>
-				<h3 className="text-xl lg:text-2xl text-gray-700 text-right">
+			<div className="flex-auto p-8 text-right">
+				<h1 className="text-5xl lg:text-7xl mb-4">Emily Bonar</h1>
+				<h3 className="text-xl lg:text-2xl text-gray-700">
 					Software Developer and Materials Scientist
 				</h3>
+				<div className="flex justify-end mt-2">
+					{socialLinks.map((social) => (
+						<Logo icon={social.icon} link={social.link} />
+					))}
+				</div>
 			</div>
 		</div>
 		<div className={`${cardClasses} p-8`}>
