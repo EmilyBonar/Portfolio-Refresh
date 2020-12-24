@@ -1,7 +1,7 @@
 export function ProjectCard(props) {
 	return (
 		<div
-			className={`m-auto bg-white opacity-90 rounded shadow-lg overflow-hidden pb-8 flex flex-col`}
+			className={`m-auto bg-white opacity-90 rounded shadow-lg overflow-hidden pb-8 flex flex-col min-h-full`}
 		>
 			<img src={props.media} className="w-full h-64 object-cover object-top" />
 			<h1 className="font-bold text-2xl px-8 pt-4 tracking-wide">

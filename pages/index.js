@@ -1,10 +1,11 @@
 import React from "react";
 import Head from "next/head";
 import { skills, socialLinks } from "../data/data.js";
+import NavBar from "../components/NavBar.js";
 
 function Skill(props) {
 	const skillClasses =
-		"px-2 py-1 bg-blue-200 text-gray-900 rounded-lg hover:bg-blue-300 text-lg";
+		"px-2 py-1 bg-blue-200 text-gray-900 rounded-lg hover:bg-blue-300 text-lg mr-4 mb-4";
 	return <p className={skillClasses}>{props.name}</p>;
 }
 
@@ -17,15 +18,11 @@ function Logo(props) {
 }
 
 const cardClasses =
-	"w-5/6 lg:w-3/4 m-auto bg-white opacity-90 rounded shadow-lg";
+	"w-5/6 lg:w-3/4 m-auto bg-white opacity-90 rounded shadow-lg mb-4";
 
 const Home = () => (
-	<div className="flex flex-col gap-4 mb-4">
-		<div className="flex w-5/6 lg:w-3/4 m-auto gap-8 text-xl text-gray-900 mt-8">
-			<a href="./">Home</a>
-			<a href="./projects">Projects</a>
-			<a href="./resume">Resume</a>
-		</div>
+	<div className="flex flex-col mb-4">
+		<NavBar />
 
 		<div className={`${cardClasses} flex flex-wrap overflow-hidden`}>
 			<div
@@ -71,9 +68,12 @@ const Home = () => (
 				of all types.
 			</p>
 		</div>
-		<div className={`${cardClasses} p-8`}>
+		<div
+			className={`${cardClasses} px-8
+		pt-8 pb-6`}
+		>
 			<h3 className="text-xl mb-2">Technical Skills</h3>
-			<div className="flex gap-4 flex-wrap">
+			<div className="flex flex-wrap">
 				{skills.map((skill) => (
 					<Skill name={skill} />
 				))}
