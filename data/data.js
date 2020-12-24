@@ -31,7 +31,7 @@ export const projects = [
 		technologies:
 			"React | TailwindCSS | REST | Google Maps | OpenWeather | Disease.sh | Axios | Node.js",
 		copy:
-			"A dashboard that creates a summery of weather and COVID conditions in a given area of the US.",
+			"A dashboard that creates a summary of weather and COVID conditions in a given area of the US.",
 		gitLink: "https://github.com/EmilyBonar/lookoutside",
 		liveLink: "https://www.emilybonar.com/LookOutside/",
 	},
