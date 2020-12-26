@@ -1,9 +1,10 @@
 import React from "react";
-import Head from "next/head";
+import Header from "../components/Header.js";
 import NavBar from "../components/NavBar.js";
 
 const Resume = () => (
 	<div className="flex flex-col gap-4 mb-4">
+		<Header title="Emily Bonar - Resume" />
 		<NavBar />
 		<iframe
 			src="/Emily Bonar Tech Resume.pdf"

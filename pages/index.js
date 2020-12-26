@@ -1,7 +1,7 @@
 import React from "react";
-import Head from "next/head";
 import { skills, socialLinks } from "../data/data.js";
 import NavBar from "../components/NavBar.js";
+import Header from "../components/Header.js";
 
 function Skill(props) {
 	const skillClasses =
@@ -22,8 +22,8 @@ const cardClasses =
 
 const Home = () => (
 	<div className="flex flex-col mb-4">
+		<Header title="Emily Bonar" />
 		<NavBar />
-
 		<div className={`${cardClasses} flex flex-wrap overflow-hidden`}>
 			<div
 				className="w-56 bg-cover"
