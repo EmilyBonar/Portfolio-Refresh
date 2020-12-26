@@ -11,7 +11,7 @@ export const skills = [
 ];
 
 export const socialLinks = [
-	{ icon: "/LI-In-Bug.png", link: "https://www.linkedin.com/in/emilybonar/" },
+	{ icon: "/linkedin.svg", link: "https://www.linkedin.com/in/emilybonar/" },
 	{ icon: "/GitHub-Mark.svg", link: "https://github.com/EmilyBonar" },
 ];
 
