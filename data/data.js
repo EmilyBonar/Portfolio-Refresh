@@ -38,9 +38,9 @@ export const projects = [
 	{
 		title: "TuneTester",
 		media: "/TuneTester.jpg",
-		technologies: "React | REST | Spotify | Node.js",
+		technologies: "React | TailwindCSS | REST | Spotify | Node.js",
 		copy:
-			"Allows you to put in the URL of a Spotify playlist, and returns a visualization of the playlist based on duration and danceability.",
+			"Allows you to put in the URL of a Spotify playlist, and returns a visualization of the playlist based on audio features.",
 		gitLink: "https://github.com/EmilyBonar/TuneTester",
 		liveLink: "https://www.emilybonar.com/TuneTester/",
 	},
