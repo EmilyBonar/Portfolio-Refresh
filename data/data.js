@@ -17,6 +17,25 @@ export const socialLinks = [
 
 export const projects = [
 	{
+		title: "Adjective Noun",
+		media: "/Adjective Noun.png",
+		technologies: "JavaScript | React | TailwindCSS",
+		copy:
+			"A single page app that randomly generates combinations of adjectives and nouns.",
+		gitLink: "https://github.com/EmilyBonar/adjective-noun",
+		liveLink: "https://adjective-noun.emilybonar.com/",
+	},
+	{
+		title: "flibberty gibbets",
+		media: "/flibberty gibbets.png",
+		technologies:
+			"JavaScript | Next.js | TailwindCSS | REST | PostgreSQL | Node.js",
+		copy:
+			"An asynchronous, database-driven messaging system, similar to Twitter.",
+		gitLink: "https://github.com/EmilyBonar/flibberty-gibbets",
+		liveLink: "https://flibberty-gibbets.herokuapp.com/",
+	},
+	{
 		title: "SearchBlocker",
 		media: "/SearchBlocker.svg",
 		technologies: "JavaScript | LocalStorage",
