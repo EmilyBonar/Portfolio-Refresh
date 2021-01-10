@@ -8,6 +8,9 @@ export const skills = [
 	"MATLAB",
 	"LabVIEW",
 	"REST",
+	"TailwindCSS",
+	"Next.js",
+	"PostgreSQL",
 ];
 
 export const socialLinks = [
