@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 export function NavBar(props) {
 	return (
-		<div className="flex w-5/6 lg:w-3/4 m-auto gap-8 text-xl text-gray-900 mt-8 mb-4">
+		<div className="flex w-5/6 m-auto mt-8 mb-4 text-xl text-gray-900 lg:w-3/4">
 			<NavItem name="Home" location="./" />
 			<NavItem name="Projects" location="./projects" />
 			<NavItem name="Resume" location="./resume" />
@@ -10,12 +12,11 @@ export function NavBar(props) {
 
 function NavItem(props) {
 	return (
-		<a
-			href={props.location}
-			className="mr-8 border-b-2 border-black hover:border-opacity-90 border-opacity-0 transition"
-		>
-			{props.name}
-		</a>
+		<Link href={props.location}>
+			<a className="mr-8 transition border-b-2 border-black border-opacity-0 lg:mr-12 hover:border-opacity-90">
+				{props.name}
+			</a>
+		</Link>
 	);
 }
 
