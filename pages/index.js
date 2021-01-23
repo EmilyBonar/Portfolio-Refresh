@@ -12,7 +12,7 @@ function Skill(props) {
 function Logo(props) {
 	return (
 		<a href={props.link} className="mx-2">
-			<img src={props.icon} className="w-12" />
+			<img src={props.icon} className="w-12" alt={`Link to ${props.name}`} />
 		</a>
 	);
 }
@@ -24,24 +24,24 @@ const Home = () => (
 	<div className="flex flex-col mb-4">
 		<Header title="Emily Bonar" />
 		<NavBar />
-		<div className={`${cardClasses} flex flex-wrap overflow-hidden`}>
+		<header className={`${cardClasses} flex flex-wrap overflow-hidden`}>
 			<div
 				className="w-56 bg-cover"
 				style={{ backgroundImage: `url(/profPic.jpg)` }}
 			></div>
 			<div className="flex-auto p-8 text-right">
-				<h1 className="text-5xl lg:text-7xl mb-4">Emily Bonar</h1>
-				<h3 className="text-xl lg:text-2xl text-gray-700">
+				<h1 className="mb-4 text-5xl lg:text-7xl">Emily Bonar</h1>
+				<h2 className="text-xl text-gray-700 lg:text-2xl">
 					Software Developer and Materials Scientist
-				</h3>
+				</h2>
 				<div className="flex justify-end mt-2">
 					{socialLinks.map((social) => (
-						<Logo icon={social.icon} link={social.link} />
+						<Logo icon={social.icon} link={social.link} name={social.name} />
 					))}
 				</div>
 			</div>
-		</div>
-		<div className={`${cardClasses} p-8`}>
+		</header>
+		<section className={`${cardClasses} p-8`}>
 			<p className="mb-3">
 				I graduated from <span className="font-semibold">Rice University</span>{" "}
 				in 2018 with a degree in Materials Science and Nanoengineering and a
@@ -67,18 +67,18 @@ const Home = () => (
 				Outside of tech, my interests are in reading, cooking, baking, and games
 				of all types.
 			</p>
-		</div>
-		<div
+		</section>
+		<section
 			className={`${cardClasses} px-8
 		pt-8 pb-6`}
 		>
-			<h3 className="text-xl mb-2">Technical Skills</h3>
+			<h3 className="mb-2 text-xl">Technical Skills</h3>
 			<div className="flex flex-wrap">
 				{skills.map((skill) => (
 					<Skill name={skill} />
 				))}
 			</div>
-		</div>
+		</section>
 	</div>
 );
 
