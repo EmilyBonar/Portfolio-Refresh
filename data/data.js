@@ -11,6 +11,7 @@ export const skills = [
 	"TailwindCSS",
 	"Next.js",
 	"PostgreSQL",
+	"TypeScript",
 ];
 
 export const socialLinks = [
@@ -27,6 +28,14 @@ export const socialLinks = [
 ];
 
 export const projects = [
+	{
+		title: "Grocery List",
+		media: "/GroceryList.png",
+		technologies: "TypeScript | React Native",
+		copy:
+			"A React Native app that allows you to make, store, and retrieve lists.",
+		gitLink: "https://github.com/EmilyBonar/grocery-list",
+	},
 	{
 		title: "Adjective Noun",
 		media: "/Adjective Noun.png",
