@@ -1,32 +1,3 @@
-export const skills = [
-	"JavaScript",
-	"Node.js",
-	"React",
-	"HTML",
-	"CSS",
-	"Python",
-	"MATLAB",
-	"LabVIEW",
-	"REST",
-	"TailwindCSS",
-	"Next.js",
-	"PostgreSQL",
-	"TypeScript",
-];
-
-export const socialLinks = [
-	{
-		name: "LinkedIn",
-		icon: "/linkedin.svg",
-		link: "https://www.linkedin.com/in/emilybonar/",
-	},
-	{
-		name: "GitHub",
-		icon: "/GitHub-Mark.svg",
-		link: "https://github.com/EmilyBonar",
-	},
-];
-
 export const projects = [
 	{
 		title: "Grocery List",
