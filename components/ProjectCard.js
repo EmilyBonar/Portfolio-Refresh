@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Logo from "../components/Logo";
 
 export function ProjectCard(props) {
 	const [fade, setFade] = useState("opacity-0 translate-y-48");
@@ -14,6 +15,7 @@ export function ProjectCard(props) {
 				src={props.media}
 				className="object-cover object-top w-full h-64"
 				alt={`Hero image for ${props.title}`}
+				width="256"
 			/>
 			<h1 className="px-8 pt-4 text-2xl font-bold tracking-wide">
 				{props.title}
@@ -24,23 +26,10 @@ export function ProjectCard(props) {
 			<div className="px-8 pt-2">{props.copy}</div>
 			<div className="flex m-auto mt-4">
 				{props.liveLink && (
-					<a href={props.liveLink}>
-						<img
-							className="mx-4"
-							width="48"
-							src={"/icon-link.svg"}
-							alt="Link to live site"
-						></img>
-					</a>
+					<Logo icon="/icon-link.svg" link={props.liveLink} name="live site" />
 				)}
 				{props.gitLink && (
-					<a href={props.gitLink} className="mx-4">
-						<img
-							width="48"
-							src={"/GitHub-Mark.svg"}
-							alt="Link to GitHub repo"
-						></img>
-					</a>
+					<Logo icon="/GitHub-Mark.svg" link={props.gitLink} name="GitHub" />
 				)}
 			</div>
 		</div>

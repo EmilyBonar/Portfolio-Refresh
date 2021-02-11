@@ -1,3 +1,5 @@
+import Logo from "../components/Logo";
+
 export const skills = [
 	"JavaScript",
 	"Node.js",
@@ -31,14 +33,6 @@ function Skill(props) {
 	const skillClasses =
 		"px-2 py-1 bg-blue-200 text-gray-900 rounded-lg hover:bg-blue-300 text-lg mr-4 mb-4";
 	return <p className={skillClasses}>{props.name}</p>;
-}
-
-function Logo(props) {
-	return (
-		<a href={props.link} className="mx-2">
-			<img src={props.icon} className="w-12" alt={`Link to ${props.name}`} />
-		</a>
-	);
 }
 
 export const cards = [
