@@ -36,11 +36,8 @@ function Skill(props) {
 }
 
 export const cards = [
-	<header className={` flex flex-wrap overflow-hidden`}>
-		<div
-			className="w-56 bg-cover"
-			style={{ backgroundImage: `url(/profPic.jpg)` }}
-		></div>
+	<header className="flex flex-wrap">
+		<img className="object-cover w-56" src="/profPic.jpg" />
 		<div className="flex-auto p-8 text-right">
 			<h1 className="mb-4 text-5xl lg:text-7xl">Emily Bonar</h1>
 			<h2 className="text-xl text-gray-700 lg:text-2xl">
