@@ -17,13 +17,13 @@ export function ProjectCard(props) {
 				alt={`Hero image for ${props.title}`}
 				width="256"
 			/>
-			<h1 className="px-8 pt-4 text-2xl font-bold tracking-wide">
+			<h1 className="px-8 pt-4 text-2xl font-bold tracking-wide text-gray-900">
 				{props.title}
 			</h1>
 			<p className="px-8 pt-1 text-xs tracking-widest text-gray-600 uppercase">
 				{props.technologies}
 			</p>
-			<div className="px-8 pt-2">{props.copy}</div>
+			<div className="px-8 pt-2 text-gray-900">{props.copy}</div>
 			<div className="flex m-auto mt-4">
 				{props.liveLink && (
 					<Logo icon="/icon-link.svg" link={props.liveLink} name="live site" />

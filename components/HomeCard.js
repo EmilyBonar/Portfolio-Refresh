@@ -7,7 +7,7 @@ export default function HomeCard(props) {
 	}, []);
 	return (
 		<div
-			className={`w-5/6 m-auto mb-4 transform-gpu bg-white rounded shadow-lg ${fade} duration-1000 transition overflow-hidden lg:w-3/4 max-w-7xl`}
+			className={`w-5/6 m-auto mb-4 transform-gpu bg-white rounded shadow-lg ${fade} duration-1000 transition overflow-hidden lg:w-3/4 max-w-7xl text-gray-900`}
 			style={{ transitionDelay: 100 * props.index + "ms" }}
 		>
 			{props.content}
