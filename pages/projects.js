@@ -8,7 +8,7 @@ const Projects = () => (
 	<div className="flex flex-col gap-4 mb-4">
 		<Header title="Emily Bonar - Projects" />
 		<NavBar />
-		<div className="grid w-5/6 grid-flow-row-dense gap-4 m-auto md:grid-cols-2 lg:grid-cols-3 lg:w-3/4">
+		<div className="grid w-5/6 grid-flow-row-dense gap-4 m-auto md:grid-cols-2 xl:grid-cols-3 lg:w-3/4 max-w-7xl">
 			{projects.map((project, index) => (
 				<ProjectCard
 					title={project.title}
