@@ -1,5 +1,22 @@
 export const projects = [
 	{
+		title: "MusicalsFYI",
+		media: "/musicalsfyi.png",
+		technologies: "TypeScript | React | TailwindCSS | Spotify",
+		copy: "A resource for viewing and sorting musical theater.",
+		gitLink: "https://github.com/EmilyBonar/musicals",
+		liveLink: "https://musicals.emilybonar.com/",
+	},
+	{
+		title: "Orbits",
+		media: "/orbits.png",
+		technologies: "TypeScript | React | TailwindCSS",
+		copy:
+			"A toy that uses CSS animations to control the orbits of balls on a track.",
+		gitLink: "https://github.com/EmilyBonar/orbits",
+		liveLink: "https://orbits.emilybonar.com/",
+	},
+	{
 		title: "Grocery List",
 		media: "/GroceryList.png",
 		technologies: "TypeScript | React Native",
