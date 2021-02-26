@@ -17,7 +17,7 @@ export function ProjectCard(props) {
 						{props.title}
 					</h1>
 					<p className="px-8 pt-1 text-xs tracking-widest text-gray-600 uppercase">
-						{props.technologies}
+						{props.technologies.join(" | ")}
 					</p>
 					<div className="px-8 pt-2 text-gray-900">{props.copy}</div>
 					<div className="flex m-auto mt-4">
