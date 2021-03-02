@@ -67,18 +67,19 @@ export const cards = [
 			math homework. Since then, I've been solving problems using{" "}
 			<span className="font-semibold">MATLAB</span>,{" "}
 			<span className="font-semibold">LabVIEW</span>, and more recently, making
-			things using <span className="font-semibold">HTML</span>,{" "}
-			<span className="font-semibold">CSS</span>, and{" "}
-			<span className="font-semibold">JavaScript</span>. I'm attending a virtual
-			batch at the{" "}
+			things using tools like <span className="font-semibold">React</span>,{" "}
+			<span className="font-semibold">TailwindCSS</span>, and{" "}
+			<span className="font-semibold">TypeScript</span>. I'm currently attending
+			a virtual batch at the{" "}
 			<a href="https://www.recurse.com/" className="font-semibold">
 				Recurse Center
 			</a>{" "}
-			to solidify my developer skills and then looking for a tech job,
-			preferably in <span className="font-semibold">Austin, TX</span>.
+			to solidify my skills and then looking for a{" "}
+			<span className="font-semibold">Front-End Developer</span> job, preferably
+			in <span className="font-semibold">Austin, TX</span>.
 		</p>
 		<p>
-			Outside of tech, my interests are in reading, cooking, baking, and games
+			Outside of tech, my interests involve reading, cooking, baking, and games
 			of all types.
 		</p>
 	</section>,
