@@ -5,7 +5,7 @@ export default function HomeCard(props) {
 	return (
 		<AnimatedCard
 			content={
-				<div className="w-5/6 m-auto mb-4 overflow-hidden text-gray-900 bg-white rounded shadow-lg lg:w-3/4 max-w-7xl">
+				<div className="w-full m-auto mb-4 overflow-hidden text-gray-900 bg-white rounded shadow-lg">
 					{props.content}
 				</div>
 			}

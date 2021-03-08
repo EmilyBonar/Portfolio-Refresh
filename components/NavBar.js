@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export function NavBar(props) {
 	return (
-		<div className="flex w-5/6 m-auto mt-8 mb-4 text-xl text-gray-800 max-w-7xl lg:w-3/4">
+		<nav className="flex w-full m-auto mt-8 mb-4 text-xl text-gray-800">
 			<NavItem name="Home" location="./" />
 			<NavItem name="Projects" location="./projects" />
 			<NavItem name="Resume" location="./resume" />
-		</div>
+		</nav>
 	);
 }
 

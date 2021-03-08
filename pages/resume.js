@@ -3,12 +3,12 @@ import Header from "../components/Header.js";
 import NavBar from "../components/NavBar.js";
 
 const Resume = () => (
-	<div className="flex flex-col gap-4 mb-4">
+	<div className="flex flex-col w-5/6 gap-4 m-auto mb-4 max-w-7xl lg:w-3/4">
 		<Header title="Emily Bonar - Resume" />
 		<NavBar />
 		<iframe
 			src="/Emily Bonar Tech Resume.pdf"
-			className="m-auto w-full md:w-5/6 xl:w-2/3 h-screen"
+			className="w-full h-screen"
 		></iframe>
 	</div>
 );
