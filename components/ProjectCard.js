@@ -6,7 +6,7 @@ export function ProjectCard(props) {
 	return (
 		<AnimatedCard
 			content={
-				<div className="flex flex-col min-h-full pb-8 m-auto overflow-hidden bg-white rounded shadow-lg">
+				<div className="flex flex-col min-h-full pb-8 m-auto overflow-hidden transition transform bg-white rounded-lg shadow-lg hover:-translate-y-2">
 					<img
 						src={props.media}
 						className="object-cover object-top w-full h-64"
