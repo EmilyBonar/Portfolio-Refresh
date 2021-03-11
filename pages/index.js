@@ -1,5 +1,5 @@
 import React from "react";
-import cards from "../data/cardData.js";
+import cards from "../data/homeData.js";
 import NavBar from "../components/NavBar.js";
 import Header from "../components/Header.js";
 import HomeCard from "../components/HomeCard.js";
