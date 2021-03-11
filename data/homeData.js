@@ -57,26 +57,24 @@ export const cards = [
 	</header>,
 	<section className={`p-8`}>
 		<p className="mb-3">
-			I graduated from <span className="font-semibold">Rice University</span> in
-			2018 with a degree in Materials Science and Nanoengineering and a
-			specialization in <span className="font-semibold">3D Printing</span>.
+			I graduated from <SemiBold text="Rice University" /> in 2018 with a degree
+			in Materials Science and Nanoengineering and a specialization in{" "}
+			<SemiBold text="3D Printing" />.
 		</p>
 		<p className="mb-3">
 			The first piece of programming I can remember was making a calulator in{" "}
-			<span className="font-semibold">Python</span> in 7th grade to help with
-			math homework. Since then, I've been solving problems using{" "}
-			<span className="font-semibold">MATLAB</span>,{" "}
-			<span className="font-semibold">LabVIEW</span>, and more recently, making
-			things using tools like <span className="font-semibold">React</span>,{" "}
-			<span className="font-semibold">TailwindCSS</span>, and{" "}
-			<span className="font-semibold">TypeScript</span>. I'm currently attending
-			a virtual batch at the{" "}
-			<a href="https://www.recurse.com/" className="font-semibold">
-				Recurse Center
+			<SemiBold text="Python" /> in 7th grade to help with math homework. Since
+			then, I've been solving problems using <SemiBold text="MATLAB" />,{" "}
+			<SemiBold text="LabVIEW" />, and more recently, making things using tools
+			like <SemiBold text="React" />, <SemiBold text="TailwindCSS" />, and{" "}
+			<SemiBold text="TypeScript" />. I'm currently attending a virtual batch at
+			the{" "}
+			<a href="https://www.recurse.com/">
+				<SemiBold text="Recurse Center" />
 			</a>{" "}
 			to solidify my skills and then looking for a{" "}
-			<span className="font-semibold">Front-End Developer</span> job, preferably
-			in <span className="font-semibold">Austin, TX</span>.
+			<SemiBold text="Front-End Developer" /> job, preferably in{" "}
+			<SemiBold text="Austin, TX" />.
 		</p>
 		<p>
 			Outside of tech, my interests involve reading, cooking, baking, and games
@@ -92,4 +90,9 @@ export const cards = [
 		</div>
 	</section>,
 ];
+
+function SemiBold(props) {
+	return <span className="font-semibold">{props.text}</span>;
+}
+
 export default cards;
