@@ -25,6 +25,13 @@ export const projects = [
 		gitLink: "https://github.com/EmilyBonar/grocery-list",
 	},
 	{
+		title: "Dandara 3D",
+		media: "/dandara.png",
+		technologies: ["Unity", "C#"],
+		copy: "A video game made with an unusual movement mechanic.",
+		liveLink: "https://dandara.emilybonar.com/",
+	},
+	{
 		title: "Adjective Noun",
 		media: "/Adjective Noun.png",
 		technologies: ["JavaScript", "React", "TailwindCSS"],
