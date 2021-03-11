@@ -90,7 +90,7 @@ export const projects = [
 		media: "/Sourdough Calculator.png",
 		technologies: ["HTML", "CSS", "JavaScript", "Data Attributes"],
 		copy:
-			"Converts recipes to adapt to your personal sourdough starter, letting you use whatever hydration level you want without throwing off the rest of the recipe.",
+			"Converts recipes to adapt to your personal sourdough starter, letting you use whatever hydration level you want.",
 		gitLink: "https://github.com/EmilyBonar/Sourdough-Calculator",
 		liveLink: "https://www.emilybonar.com/Sourdough-Calculator/",
 	},
