@@ -59,7 +59,8 @@ export const cards = [
 		<p className="mb-3">
 			I graduated from <SemiBold text="Rice University" /> in 2018 with a degree
 			in Materials Science and Nanoengineering and a specialization in{" "}
-			<SemiBold text="3D Printing" />.
+			<SemiBold text="3D Printing" />. Since then I have been working as a{" "}
+			<SemiBold text="Software Developer" /> at the Army Research Lab.
 		</p>
 		<p className="mb-3">
 			The first piece of programming I can remember was making a calulator in{" "}
