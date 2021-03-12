@@ -23,9 +23,9 @@ export function ProjectCard(props) {
 					<div className="flex m-auto mt-4">
 						{props.liveLink && (
 							<Logo
-								icon="/icon-link.svg"
+								icon="/external-link.svg"
 								link={props.liveLink}
-								name="live site"
+								name="Live Site"
 							/>
 						)}
 						{props.gitLink && (
