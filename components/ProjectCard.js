@@ -7,12 +7,15 @@ export function ProjectCard(props) {
 		<AnimatedCard
 			content={
 				<div className="flex flex-col min-h-full pb-8 m-auto overflow-hidden transition transform bg-white rounded-lg shadow-lg hover:-translate-y-2">
-					<img
-						src={props.media}
-						className="object-cover object-top w-full h-64"
-						alt={`Hero image for ${props.title}`}
-						width="256"
-					/>
+					<a href={props.liveLink} target="_blank">
+						<img
+							src={props.media}
+							className="object-cover object-top w-full h-64"
+							alt={`Hero image for ${props.title}`}
+							width="256"
+						/>
+					</a>
+
 					<h1 className="px-8 pt-4 text-2xl font-bold tracking-wide text-gray-900">
 						{props.title}
 					</h1>
