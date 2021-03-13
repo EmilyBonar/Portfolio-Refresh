@@ -10,7 +10,7 @@ export const projects = [
 	{
 		title: "Orbits",
 		media: "/orbits.png",
-		technologies: ["TypeScript", "React", "TailwindCSS"],
+		technologies: ["TypeScript", "React", "TailwindCSS", "CSS"],
 		copy:
 			"A toy that uses CSS animations to control the orbits of balls on a track.",
 		gitLink: "https://github.com/EmilyBonar/orbits",
@@ -20,8 +20,7 @@ export const projects = [
 		title: "Grocery List",
 		media: "/GroceryList.png",
 		technologies: ["TypeScript", "React Native"],
-		copy:
-			"A React Native app that allows you to make, store, and retrieve lists.",
+		copy: "An app that allows you to make, store, and retrieve lists.",
 		gitLink: "https://github.com/EmilyBonar/grocery-list",
 	},
 	{
