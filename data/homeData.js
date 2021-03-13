@@ -32,7 +32,7 @@ export const socialLinks = [
 
 function Skill(props) {
 	const skillClasses =
-		"px-2 py-1 bg-blue-200 text-gray-900 rounded-lg hover:bg-blue-300 text-lg mr-4 mb-4";
+		"px-3 py-2 bg-blue-100 text-gray-700 rounded-lg hover:bg-blue-200 text-lg mr-4 mb-4 font-semibold";
 	return (
 		<Link href={`/projects?skill=${props.name}`}>
 			<a className={skillClasses}>{props.name}</a>
