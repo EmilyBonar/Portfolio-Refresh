@@ -1,4 +1,5 @@
 import Logo from "../components/Logo";
+import Link from "next/link";
 
 export const skills = [
 	"JavaScript",
@@ -32,7 +33,11 @@ export const socialLinks = [
 function Skill(props) {
 	const skillClasses =
 		"px-2 py-1 bg-blue-200 text-gray-900 rounded-lg hover:bg-blue-300 text-lg mr-4 mb-4";
-	return <p className={skillClasses}>{props.name}</p>;
+	return (
+		<Link href={`/projects?skill=${props.name}`}>
+			<a className={skillClasses}>{props.name}</a>
+		</Link>
+	);
 }
 
 export const cards = [
