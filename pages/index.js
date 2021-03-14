@@ -10,7 +10,7 @@ const Home = () => (
 		<NavBar />
 		<main>
 			{cards.map((cardData, index) => (
-				<HomeCard content={cardData} index={index} />
+				<HomeCard content={cardData} index={index} key={index} />
 			))}
 		</main>
 	</div>

@@ -90,8 +90,8 @@ export const cards = [
 	<section className={`px-8 pt-8 pb-6`}>
 		<h3 className="mb-2 text-xl">Technical Skills</h3>
 		<div className="flex flex-wrap">
-			{skills.map((skill) => (
-				<Skill name={skill} />
+			{skills.map((skill, index) => (
+				<Skill name={skill} key={index} />
 			))}
 		</div>
 	</section>,

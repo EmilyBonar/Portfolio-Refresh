@@ -41,6 +41,7 @@ function Projects() {
 							gitLink={project.gitLink}
 							liveLink={project.liveLink}
 							index={index}
+							key={index}
 						/>
 					))}
 			</main>
