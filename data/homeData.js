@@ -87,7 +87,7 @@ export const cards = [
 			of all types.
 		</p>
 	</section>,
-	<section className={`px-8 pt-8 pb-6`}>
+	<section className={`px-8 pt-8 pb-4`}>
 		<h3 className="mb-2 text-xl">Technical Skills</h3>
 		<div className="flex flex-wrap">
 			{skills.map((skill, index) => (
