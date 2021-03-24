@@ -53,7 +53,7 @@ export const projects = [
 		copy:
 			"An asynchronous, database-driven messaging system, similar to Twitter.",
 		gitLink: "https://github.com/EmilyBonar/flibberty-gibbets",
-		liveLink: "https://flibberty-gibbets.herokuapp.com/",
+		liveLink: "https://flibberty-gibbets.emilybonar.com/",
 	},
 	{
 		title: "SearchBlocker",
