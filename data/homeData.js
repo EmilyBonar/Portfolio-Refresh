@@ -1,5 +1,6 @@
 import Logo from "../components/Logo";
 import Link from "next/link";
+import projects from "./projectData";
 
 export const skills = [
 	"JavaScript",
@@ -87,8 +88,37 @@ export const cards = [
 			of all types.
 		</p>
 	</section>,
+	<section className="p-4 ">
+		<Link href="./projects">
+			<a>
+				<h3 className="mb-2 text-xl font-semibold text-gray-800">
+					See My Projects
+				</h3>
+			</a>
+		</Link>
+		<div className="flex flex-wrap justify-center">
+			{projects.map((project) => (
+				<div className="relative overflow-visible group">
+					<Link href={`./projects?project=${project.title}`}>
+						<a>
+							<img
+								className="object-cover w-20 h-20 mb-2 mr-2 transform rounded group-hover:scale-110"
+								src={project.media}
+							/>
+							<div className="absolute z-10 hidden w-40 p-2 bg-white rounded shadow -top-10 -left-1/2 group-hover:block">
+								<p className="font-semibold text-md">{project.title}</p>
+								<p className="text-sm">{project.technologies.join(" | ")}</p>
+							</div>
+						</a>
+					</Link>
+				</div>
+			))}
+		</div>
+	</section>,
 	<section className={`px-8 pt-8 pb-4`}>
-		<h3 className="mb-2 text-xl">Technical Skills</h3>
+		<h3 className="mb-2 text-xl font-semibold text-gray-800">
+			Technical Skills
+		</h3>
 		<div className="flex flex-wrap">
 			{skills.map((skill, index) => (
 				<Skill name={skill} key={index} />
