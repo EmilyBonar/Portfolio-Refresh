@@ -1,5 +1,13 @@
 export const projects = [
 	{
+		title: "ColorGuesser",
+		media: "/ColorGuesser.png",
+		technologies: ["TypeScript", "React", "TailwindCSS"],
+		copy: "A game that tests your ability to locate colors by name.",
+		gitLink: "https://github.com/EmilyBonar/color-guesser",
+		liveLink: "https://color-guesser.emilybonar.com/",
+	},
+	{
 		title: "MusicalsFYI",
 		media: "/musicalsfyi.png",
 		technologies: ["TypeScript", "React", "TailwindCSS", "Spotify"],
@@ -15,6 +23,14 @@ export const projects = [
 			"A toy that uses CSS animations to control the orbits of balls on a track.",
 		gitLink: "https://github.com/EmilyBonar/orbits",
 		liveLink: "https://orbits.emilybonar.com/",
+	},
+	{
+		title: "Tiling",
+		media: "/Tiling.png",
+		technologies: ["TypeScript", "React", "TailwindCSS"],
+		copy: "A hypnotic art piece made using CSS transitions.",
+		gitLink: "https://github.com/EmilyBonar/tiling",
+		liveLink: "https://tiling.emilybonar.com/",
 	},
 	{
 		title: "Grocery List",
