@@ -91,7 +91,7 @@ export const cards = [
 	<section className="p-4 ">
 		<Link href="./projects">
 			<a>
-				<h3 className="mb-2 text-xl font-semibold text-gray-800">
+				<h3 className="inline-block mb-2 text-xl font-semibold text-gray-800">
 					See My Projects
 				</h3>
 			</a>
