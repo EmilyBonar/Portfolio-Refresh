@@ -11,9 +11,12 @@
 		"classnames": "^2.2.6",
 		"netlify-cli": "^3.10.1",
 		"next": "^10",
-		"postcss": "^8.2.1",
 		"react": "16.14.0",
-		"react-dom": "16.14.0",
-		"tailwindcss": "^2.0.2"
+		"react-dom": "16.14.0"
+	},
+	"devDependencies": {
+		"@tailwindcss/jit": "^0.1.10",
+		"postcss": "^8.2.8",
+		"tailwindcss": "^2.0.4"
 	}
 }
