@@ -7,18 +7,18 @@ import NavBar from "../components/NavBar.js";
 
 function Projects() {
 	const router = useRouter();
-	const { skill } = router.query;
+	const { query } = router.query;
 
 	const [search, setSearch] = useState("");
 	useEffect(() => {
-		setSearch(skill ? skill : "");
-	}, [skill]);
+		setSearch(query ? query : "");
+	}, [query]);
 	return (
 		<div className="flex flex-col w-5/6 gap-4 m-auto mb-4 max-w-7xl lg:w-3/4">
 			<Header title="Emily Bonar - Projects" />
 			<NavBar />
 			<SearchBar
-				initialValue={skill ? skill : ""}
+				initialValue={query ? query : ""}
 				onInput={(input) => setSearch(input)}
 			/>
 			<main className="grid grid-flow-row-dense gap-4 m-auto md:grid-cols-2 xl:grid-cols-3">

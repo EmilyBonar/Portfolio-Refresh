@@ -35,7 +35,7 @@ function Skill(props) {
 	const skillClasses =
 		"px-3 py-2 bg-blue-100 text-gray-700 rounded-lg hover:bg-blue-200 text-lg mr-4 mb-4 font-semibold";
 	return (
-		<Link href={`/projects?skill=${props.name}`}>
+		<Link href={`/projects?query=${props.name}`}>
 			<a className={skillClasses}>{props.name}</a>
 		</Link>
 	);
@@ -99,7 +99,7 @@ export const cards = [
 		<div className="flex flex-wrap justify-center">
 			{projects.map((project) => (
 				<div className="relative overflow-visible group">
-					<Link href={`./projects?project=${project.title}`}>
+					<Link href={`./projects?query=${project.title}`}>
 						<a>
 							<img
 								className="object-cover w-20 h-20 mb-2 mr-2 transform rounded group-hover:scale-110"
