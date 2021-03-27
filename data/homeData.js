@@ -81,7 +81,7 @@ export const cards = [
 			</a>{" "}
 			to solidify my skills and then looking for a{" "}
 			<SemiBold text="Front-End Developer" /> job, preferably in{" "}
-			<SemiBold text="Austin, TX" />.
+			<SemiBold text="Austin, TX" /> or remote.
 		</p>
 		<p>
 			Outside of tech, my interests involve reading, cooking, baking, and games
