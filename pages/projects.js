@@ -14,7 +14,7 @@ function Projects() {
 		setSearch(query ? query : "");
 	}, [query]);
 	return (
-		<div className="flex flex-col w-5/6 gap-4 m-auto mb-4 max-w-7xl lg:w-3/4">
+		<div className="flex flex-col w-5/6 m-auto mb-4 max-w-7xl lg:w-3/4">
 			<Header title="Emily Bonar - Projects" />
 			<NavBar />
 			<SearchBar
@@ -52,7 +52,7 @@ function Projects() {
 function SearchBar(props) {
 	return (
 		<input
-			className="p-3 text-xl rounded-full outline-none focus:ring-2 ring-gray-500"
+			className="p-3 my-4 text-xl rounded-full outline-none focus:ring-2 ring-gray-500"
 			placeholder="Search..."
 			onInput={(e) => props.onInput(e.target.value)}
 			defaultValue={props.initialValue}
