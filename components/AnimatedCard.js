@@ -7,7 +7,7 @@ export default function AnimatedCard(props) {
 	}, []);
 	return (
 		<div
-			className={`transform-gpu ${fade} duration-1000 transition`}
+			className={`transform-gpu ${fade} duration-1000 transition mb-4`}
 			style={{ transitionDelay: 100 * props.index + "ms" }}
 		>
 			{props.content}

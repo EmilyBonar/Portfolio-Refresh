@@ -21,7 +21,7 @@ function Projects() {
 				initialValue={query ? query : ""}
 				onInput={(input) => setSearch(input)}
 			/>
-			<main className="grid grid-flow-row-dense gap-4 m-auto md:grid-cols-2 xl:grid-cols-3">
+			<main className="grid grid-flow-row-dense m-auto md:grid-cols-2 xl:grid-cols-3">
 				{projects
 					.filter(
 						(project) =>
