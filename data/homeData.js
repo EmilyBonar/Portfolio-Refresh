@@ -102,7 +102,7 @@ export const cards = [
 					<Link href={`./projects?query=${project.title}`}>
 						<a>
 							<img
-								className="object-cover w-20 h-20 mb-2 mr-2 transform rounded group-hover:scale-110"
+								className="object-cover object-top w-20 h-20 mb-2 mr-2 transform rounded group-hover:scale-110"
 								src={project.media}
 							/>
 							<div className="absolute z-10 hidden w-40 p-2 bg-white rounded shadow -top-10 -left-1/2 group-hover:block">
