@@ -88,7 +88,7 @@ export const cards = [
 			of all types.
 		</p>
 	</section>,
-	<section className="p-4 ">
+	<section className="p-4">
 		<Link href="./projects">
 			<a>
 				<h3 className="inline-block mb-2 text-xl font-semibold text-gray-800">
@@ -96,7 +96,7 @@ export const cards = [
 				</h3>
 			</a>
 		</Link>
-		<div className="flex flex-wrap justify-center">
+		<div className="flex flex-wrap justify-center ">
 			{projects.map((project) => (
 				<div className="relative overflow-visible group">
 					<Link href={`./projects?query=${project.title}`}>
@@ -119,7 +119,7 @@ export const cards = [
 		<h3 className="mb-2 text-xl font-semibold text-gray-800">
 			Technical Skills
 		</h3>
-		<div className="flex flex-wrap">
+		<div className="flex flex-wrap justify-center sm:justify-start">
 			{skills.map((skill, index) => (
 				<Skill name={skill} key={index} />
 			))}
