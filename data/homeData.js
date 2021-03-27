@@ -42,9 +42,9 @@ function Skill(props) {
 }
 
 export const cards = [
-	<header className="flex max-h-60">
+	<header className="flex max-h-64">
 		<img className="object-cover w-0 lg:w-56" src="/profPic.jpg" />
-		<div className="flex-auto p-8 text-right">
+		<div className="flex-auto p-4 text-right sm:p-8">
 			<h1 className="mb-4 text-5xl md:text-7xl">Emily Bonar</h1>
 			<h2 className="text-xl text-gray-700 md:text-2xl">
 				Software Developer and Materials Scientist
