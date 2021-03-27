@@ -42,7 +42,7 @@ function Skill(props) {
 }
 
 export const cards = [
-	<header className="flex flex-wrap">
+	<header className="flex max-h-60">
 		<img className="object-cover w-0 lg:w-56" src="/profPic.jpg" />
 		<div className="flex-auto p-8 text-right">
 			<h1 className="mb-4 text-5xl md:text-7xl">Emily Bonar</h1>
