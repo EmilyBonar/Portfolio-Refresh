@@ -118,7 +118,7 @@ function ProjectsCard() {
 				{projects.map((project) => {
 					let technologies =
 						project.technologies.slice(0, 4).join(" | ") +
-						(project.technologies.length >= 4 ? " | ..." : "");
+						(project.technologies.length > 4 ? " | ..." : "");
 					return (
 						<div className="relative overflow-visible group">
 							<Link href={`./projects?query=${project.title}`}>
