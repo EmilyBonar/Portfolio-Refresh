@@ -32,11 +32,11 @@ export const socialLinks = [
 ];
 
 function Skill(props) {
-	const skillClasses =
-		"px-3 py-2 bg-blue-100 text-gray-700 rounded-lg hover:bg-blue-200 text-lg mr-4 mb-4 font-semibold";
 	return (
 		<Link href={`/projects?query=${props.name}`}>
-			<a className={skillClasses}>{props.name}</a>
+			<a className="px-3 py-2 mb-4 mr-4 text-lg font-semibold text-gray-700 transition bg-blue-100 rounded-lg hover:bg-blue-200">
+				{props.name}
+			</a>
 		</Link>
 	);
 }
@@ -124,7 +124,7 @@ function ProjectsCard() {
 							<Link href={`./projects?query=${project.title}`}>
 								<a>
 									<img
-										className="object-cover object-top w-20 h-20 mb-2 mr-2 transform rounded group-hover:scale-110"
+										className="object-cover object-top w-20 h-20 mb-2 mr-2 transition transform rounded group-hover:scale-110"
 										src={project.media}
 									/>
 									<div className="absolute z-10 hidden w-40 p-2 bg-white rounded shadow -top-10 -left-1/2 group-hover:block">
