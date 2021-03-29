@@ -34,7 +34,7 @@ export const socialLinks = [
 function Skill(props) {
 	return (
 		<Link href={`/projects?query=${props.name}`}>
-			<a className="px-3 py-2 mb-4 mr-4 text-lg font-semibold text-gray-700 transition bg-blue-100 rounded-lg hover:bg-blue-200">
+			<a className="px-3 py-2 mb-4 mr-4 text-lg font-semibold text-gray-800 transition bg-pink-100 rounded-lg shadow-inner hover:bg-pink-300">
 				{props.name}
 			</a>
 		</Link>
@@ -109,7 +109,7 @@ function ProjectsCard() {
 		<section className="p-4">
 			<Link href="./projects">
 				<a>
-					<h3 className="inline-block mb-2 text-xl font-semibold text-gray-800">
+					<h3 className="inline-block mb-2 text-xl font-semibold text-gray-900">
 						See My Projects
 					</h3>
 				</a>
@@ -144,7 +144,7 @@ function ProjectsCard() {
 function SkillsCard() {
 	return (
 		<section className={`px-8 pt-8 pb-4`}>
-			<h3 className="mb-2 text-xl font-semibold text-gray-800">
+			<h3 className="mb-2 text-xl font-semibold text-gray-900">
 				Technical Skills
 			</h3>
 			<div className="flex flex-wrap justify-center sm:justify-start">
