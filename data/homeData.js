@@ -87,13 +87,13 @@ function AboutCard() {
 				Since then, I've been solving problems using <SemiBold text="MATLAB" />,{" "}
 				<SemiBold text="LabVIEW" />, and more recently, making things using
 				tools like <SemiBold text="React" />, <SemiBold text="TailwindCSS" />,
-				and <SemiBold text="TypeScript" />. I'm currently attending a virtual
-				batch at the{" "}
+				and <SemiBold text="TypeScript" />. I recently finished a batch at the{" "}
 				<a href="https://www.recurse.com/">
 					<SemiBold text="Recurse Center" />
 				</a>{" "}
-				to solidify my skills and then looking for a{" "}
-				<SemiBold text="Front-End Developer" /> job, preferably in{" "}
+				where I honed my web development skills, and I am now looking for a{" "}
+				<SemiBold text="Front-End" /> or{" "}
+				<SemiBold text="Full-Stack Developer" /> job, preferably in{" "}
 				<SemiBold text="Austin, TX" /> or remote.
 			</p>
 			<p>
