@@ -2,22 +2,6 @@ import Logo from "../components/Logo";
 import Link from "next/link";
 import projects from "./projectData";
 
-export const skills = [
-	"JavaScript",
-	"Node.js",
-	"React",
-	"HTML",
-	"CSS",
-	"Python",
-	"MATLAB",
-	"LabVIEW",
-	"REST",
-	"TailwindCSS",
-	"Next.js",
-	"PostgreSQL",
-	"TypeScript",
-];
-
 export const socialLinks = [
 	{
 		name: "LinkedIn",
@@ -30,16 +14,6 @@ export const socialLinks = [
 		link: "https://github.com/EmilyBonar",
 	},
 ];
-
-function Skill(props) {
-	return (
-		<Link href={`/projects?query=${props.name}`}>
-			<a className="px-3 py-2 mb-4 mr-4 text-lg font-semibold text-gray-800 transition bg-pink-100 rounded-lg shadow-inner hover:bg-pink-300">
-				{props.name}
-			</a>
-		</Link>
-	);
-}
 
 export const cards = [
 	<HeaderCard />,
@@ -155,6 +129,32 @@ function SkillsCard() {
 		</section>
 	);
 }
+
+function Skill(props) {
+	return (
+		<Link href={`/projects?query=${props.name}`}>
+			<a className="px-3 py-2 mb-4 mr-4 text-lg font-semibold text-gray-800 transition bg-pink-100 rounded-lg shadow-inner hover:bg-pink-300 hover:shadow-lg">
+				{props.name}
+			</a>
+		</Link>
+	);
+}
+
+export const skills = [
+	"JavaScript",
+	"Node.js",
+	"React",
+	"HTML",
+	"CSS",
+	"Python",
+	"MATLAB",
+	"LabVIEW",
+	"REST",
+	"TailwindCSS",
+	"Next.js",
+	"PostgreSQL",
+	"TypeScript",
+];
 
 function SemiBold(props) {
 	return <span className="font-semibold">{props.text}</span>;
