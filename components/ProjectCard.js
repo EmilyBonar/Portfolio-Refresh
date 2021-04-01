@@ -6,7 +6,7 @@ export function ProjectCard(props) {
 	return (
 		<AnimatedCard
 			content={
-				<div className="flex flex-col h-full min-h-full pb-8 m-auto overflow-hidden transition transform bg-white rounded-lg shadow-lg hover:-translate-y-2 md:mx-2">
+				<div className="flex flex-col h-full max-w-md min-h-full pb-8 m-auto overflow-hidden transition transform bg-white rounded-lg shadow-lg hover:-translate-y-2 md:mx-2">
 					<a href={props.project.liveLink} target="_blank">
 						<img
 							src={props.project.media}
