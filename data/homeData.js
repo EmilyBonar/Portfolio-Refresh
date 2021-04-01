@@ -90,9 +90,6 @@ function ProjectsCard() {
 			</Link>
 			<div className="flex flex-wrap justify-center ">
 				{projects.map((project) => {
-					let technologies =
-						project.technologies.slice(0, 4).join(" | ") +
-						(project.technologies.length > 4 ? " | ..." : "");
 					return (
 						<div className="relative overflow-visible group">
 							<Link href={`./projects?query=${project.title}`}>
@@ -103,7 +100,10 @@ function ProjectsCard() {
 									/>
 									<div className="absolute z-10 hidden w-40 p-2 bg-white rounded shadow -top-10 -left-1/2 group-hover:block">
 										<p className="font-semibold text-md">{project.title}</p>
-										<p className="text-sm">{technologies}</p>
+										<p className="text-sm">
+											{project.technologies.slice(0, 4).join(" | ") +
+												(project.technologies.length > 4 ? " | ..." : "")}
+										</p>
 									</div>
 								</a>
 							</Link>
@@ -117,7 +117,7 @@ function ProjectsCard() {
 
 function SkillsCard() {
 	return (
-		<section className={`px-8 pt-8 pb-4`}>
+		<section className={`p-8 pb-4`}>
 			<h3 className="mb-2 text-xl font-semibold text-gray-900">
 				Technical Skills
 			</h3>
