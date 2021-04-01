@@ -14,7 +14,7 @@ function Projects() {
 		setSearch(query ? query : "");
 	}, [query]);
 	return (
-		<div className="flex flex-col w-5/6 m-auto mb-4 max-w-7xl lg:w-3/4">
+		<div className="flex flex-col w-5/6 m-auto mb-4 max-w-7xl">
 			<Header title="Emily Bonar - Projects" />
 			<NavBar />
 			<SearchBar
