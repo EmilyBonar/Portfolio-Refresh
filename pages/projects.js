@@ -43,7 +43,8 @@ function Projects() {
 function SearchBar(props) {
 	return (
 		<input
-			className="p-3 my-4 text-xl rounded-full outline-none focus:ring-2 ring-gray-500"
+			type="search"
+			className="p-3 pl-4 my-4 text-xl rounded-full outline-none focus:ring-2 ring-gray-500"
 			placeholder="Search..."
 			onInput={(e) => props.onInput(e.target.value)}
 			defaultValue={props.initialValue}
