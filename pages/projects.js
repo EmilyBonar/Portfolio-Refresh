@@ -33,16 +33,7 @@ function Projects() {
 							project.copy.toLowerCase().includes(search.toLowerCase()),
 					)
 					.map((project, index) => (
-						<ProjectCard
-							title={project.title}
-							media={project.media}
-							technologies={project.technologies}
-							copy={project.copy}
-							gitLink={project.gitLink}
-							liveLink={project.liveLink}
-							index={index}
-							key={index}
-						/>
+						<ProjectCard project={project} index={index} key={index} />
 					))}
 			</main>
 		</div>
