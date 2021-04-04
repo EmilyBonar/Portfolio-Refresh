@@ -50,10 +50,14 @@ function AboutCard() {
 	return (
 		<section className={`p-8`}>
 			<p className="mb-3">
-				I graduated from <SemiBold text="Rice University" /> in 2018 with a
-				degree in Materials Science and Nanoengineering and a specialization in{" "}
-				<SemiBold text="3D Printing" />. Since then I have been working as a{" "}
-				<SemiBold text="Software Developer" /> at the Army Research Lab.
+				I graduated from{" "}
+				<a href="https://www.rice.edu/" className="hover:text-blue-600">
+					<SemiBold text="Rice University" />
+				</a>{" "}
+				in 2018 with a degree in Materials Science and Nanoengineering and a
+				specialization in <SemiBold text="3D Printing" />. Since then I have
+				been working as a <SemiBold text="Software Developer" /> at the Army
+				Research Lab.
 			</p>
 			<p className="mb-3">
 				The first piece of programming I can remember was making a calulator in{" "}
@@ -62,7 +66,7 @@ function AboutCard() {
 				<SemiBold text="LabVIEW" />, and more recently, making things using
 				tools like <SemiBold text="React" />, <SemiBold text="TailwindCSS" />,
 				and <SemiBold text="TypeScript" />. I recently finished a batch at the{" "}
-				<a href="https://www.recurse.com/">
+				<a href="https://www.recurse.com/" className="hover:text-blue-600">
 					<SemiBold text="Recurse Center" />
 				</a>{" "}
 				where I honed my web development skills, and I am now looking for a{" "}
