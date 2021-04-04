@@ -103,10 +103,10 @@ function MiniProject(props) {
 			<Link href={`./projects?query=${props.project.title}`}>
 				<a>
 					<img
-						className="object-cover object-top w-20 h-20 mb-2 mr-2 transition transform rounded group-hover:scale-110"
+						className="object-cover object-top w-24 h-24 mb-3 mr-2 transition transform rounded group-hover:scale-110 group-hover:shadow-lg"
 						src={props.project.media}
 					/>
-					<div className="absolute z-10 hidden w-40 p-2 bg-white rounded shadow -top-10 -left-1/2 group-hover:block">
+					<div className="absolute z-10 hidden w-40 p-2 bg-white rounded shadow -top-10 group-hover:block">
 						<p className="font-semibold text-md">{props.project.title}</p>
 						<p className="text-sm">
 							{props.project.technologies.slice(0, 4).join(" | ") +
