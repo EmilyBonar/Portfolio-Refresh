@@ -89,8 +89,8 @@ function MiniProjectsCard() {
 				</a>
 			</Link>
 			<div className="flex flex-wrap justify-center sm:justify-start ">
-				{projects.map((project) => {
-					return <MiniProject project={project} />;
+				{projects.map((project, index) => {
+					return <MiniProject project={project} key={index} />;
 				})}
 			</div>
 		</section>
