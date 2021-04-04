@@ -80,7 +80,7 @@ function AboutCard() {
 
 function MiniProjectsCard() {
 	return (
-		<section className="p-4">
+		<section className="p-8 pb-4">
 			<Link href="./projects">
 				<a>
 					<h3 className="inline-block mb-2 text-xl font-semibold text-gray-900">
@@ -88,7 +88,7 @@ function MiniProjectsCard() {
 					</h3>
 				</a>
 			</Link>
-			<div className="flex flex-wrap justify-center ">
+			<div className="flex flex-wrap justify-center sm:justify-start ">
 				{projects.map((project) => {
 					return <MiniProject project={project} />;
 				})}
@@ -103,7 +103,7 @@ function MiniProject(props) {
 			<Link href={`./projects?query=${props.project.title}`}>
 				<a>
 					<img
-						className="object-cover object-top w-24 h-24 mb-3 mr-2 transition transform rounded group-hover:scale-110 group-hover:shadow-lg"
+						className="object-cover object-top w-24 h-24 mb-4 mr-4 transition transform rounded group-hover:scale-110 group-hover:shadow-lg"
 						src={props.project.media}
 					/>
 					<div className="absolute z-10 hidden w-40 p-2 bg-white rounded shadow -top-10 group-hover:block">
