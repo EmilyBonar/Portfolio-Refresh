@@ -18,7 +18,7 @@ export const socialLinks = [
 export const cards = [
 	<HeaderCard />,
 	<AboutCard />,
-	<ProjectsCard />,
+	<MiniProjectsCard />,
 	<SkillsCard />,
 ];
 
@@ -78,7 +78,7 @@ function AboutCard() {
 	);
 }
 
-function ProjectsCard() {
+function MiniProjectsCard() {
 	return (
 		<section className="p-4">
 			<Link href="./projects">
@@ -90,28 +90,32 @@ function ProjectsCard() {
 			</Link>
 			<div className="flex flex-wrap justify-center ">
 				{projects.map((project) => {
-					return (
-						<div className="relative overflow-visible group">
-							<Link href={`./projects?query=${project.title}`}>
-								<a>
-									<img
-										className="object-cover object-top w-20 h-20 mb-2 mr-2 transition transform rounded group-hover:scale-110"
-										src={project.media}
-									/>
-									<div className="absolute z-10 hidden w-40 p-2 bg-white rounded shadow -top-10 -left-1/2 group-hover:block">
-										<p className="font-semibold text-md">{project.title}</p>
-										<p className="text-sm">
-											{project.technologies.slice(0, 4).join(" | ") +
-												(project.technologies.length > 4 ? " | ..." : "")}
-										</p>
-									</div>
-								</a>
-							</Link>
-						</div>
-					);
+					return <MiniProject project={project} />;
 				})}
 			</div>
 		</section>
+	);
+}
+
+function MiniProject(props) {
+	return (
+		<div className="relative overflow-visible group">
+			<Link href={`./projects?query=${props.project.title}`}>
+				<a>
+					<img
+						className="object-cover object-top w-20 h-20 mb-2 mr-2 transition transform rounded group-hover:scale-110"
+						src={props.project.media}
+					/>
+					<div className="absolute z-10 hidden w-40 p-2 bg-white rounded shadow -top-10 -left-1/2 group-hover:block">
+						<p className="font-semibold text-md">{props.project.title}</p>
+						<p className="text-sm">
+							{props.project.technologies.slice(0, 4).join(" | ") +
+								(props.project.technologies.length > 4 ? " | ..." : "")}
+						</p>
+					</div>
+				</a>
+			</Link>
+		</div>
 	);
 }
 
