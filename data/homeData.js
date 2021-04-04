@@ -106,7 +106,7 @@ function MiniProject(props) {
 						className="object-cover object-top w-24 h-24 mb-4 mr-4 transition transform rounded group-hover:scale-110 group-hover:shadow-lg"
 						src={props.project.media}
 					/>
-					<div className="absolute z-10 hidden w-40 p-2 bg-white rounded shadow -top-10 group-hover:block">
+					<div className="absolute z-10 hidden w-40 p-2 bg-white rounded shadow-lg -top-10 -left-8 group-hover:block">
 						<p className="font-semibold text-md">{props.project.title}</p>
 						<p className="text-sm">
 							{props.project.technologies.slice(0, 4).join(" | ") +
