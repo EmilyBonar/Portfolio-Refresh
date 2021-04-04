@@ -165,7 +165,11 @@ export const skills = [
 ];
 
 function SemiBold(props) {
-	return <span className="font-semibold">{props.text}</span>;
+	return (
+		<span className="inline-block font-semibold transition transform hover:-translate-y-0.5">
+			{props.text}
+		</span>
+	);
 }
 
 export default cards;
