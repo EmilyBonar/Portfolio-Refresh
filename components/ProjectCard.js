@@ -33,7 +33,7 @@ export function ProjectCard(props) {
 									name="Live Site"
 								/>
 							)}
-							{props.gitLink && (
+							{props.project.gitLink && (
 								<Logo
 									icon="/GitHub-Mark.svg"
 									link={props.project.gitLink}
