@@ -32,12 +32,9 @@ function ProjectList(props) {
 	return props.projects
 		.filter(
 			(project) =>
-				project.title.toLowerCase().includes(props.search.toLowerCase()) ||
-				project.technologies
-					.join(" ")
-					.toLowerCase()
-					.includes(props.search.toLowerCase()) ||
-				project.copy.toLowerCase().includes(props.search.toLowerCase()),
+				project.title.toLowerCase().includes(props.search) ||
+				project.technologies.join(" ").toLowerCase().includes(props.search) ||
+				project.copy.toLowerCase().includes(props.search),
 		)
 		.map((project, index) => (
 			<ProjectCard project={project} index={index} key={index} />
@@ -50,7 +47,7 @@ function SearchBar(props) {
 			type="search"
 			className="p-3 pl-4 my-4 text-xl rounded-full outline-none focus:ring-2 ring-gray-500"
 			placeholder="Search..."
-			onInput={(e) => props.onInput(e.target.value)}
+			onInput={(e) => props.onInput(e.target.value.toLowerCase())}
 			defaultValue={props.initialValue}
 		></input>
 	);
