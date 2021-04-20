@@ -22,22 +22,26 @@ function Projects() {
 				onInput={(input) => setSearch(input)}
 			/>
 			<main className="grid grid-flow-row-dense m-auto md:grid-cols-2 xl:grid-cols-3">
-				{projects
-					.filter(
-						(project) =>
-							project.title.toLowerCase().includes(search.toLowerCase()) ||
-							project.technologies
-								.join(" ")
-								.toLowerCase()
-								.includes(search.toLowerCase()) ||
-							project.copy.toLowerCase().includes(search.toLowerCase()),
-					)
-					.map((project, index) => (
-						<ProjectCard project={project} index={index} key={index} />
-					))}
+				<ProjectList projects={projects} search={search} />
 			</main>
 		</div>
 	);
+}
+
+function ProjectList(props) {
+	return props.projects
+		.filter(
+			(project) =>
+				project.title.toLowerCase().includes(props.search.toLowerCase()) ||
+				project.technologies
+					.join(" ")
+					.toLowerCase()
+					.includes(props.search.toLowerCase()) ||
+				project.copy.toLowerCase().includes(props.search.toLowerCase()),
+		)
+		.map((project, index) => (
+			<ProjectCard project={project} index={index} key={index} />
+		));
 }
 
 function SearchBar(props) {
