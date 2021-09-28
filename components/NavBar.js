@@ -1,19 +1,30 @@
 import Link from "next/link";
+import { useMemo } from "react";
 
 export function NavBar(props) {
+	const currentPage = useMemo(() => {
+		return props.title.split("Emily Bonar - ").join("");
+	}, []);
 	return (
-		<nav className="flex w-full m-auto mt-8 mb-4 text-xl text-gray-800">
-			<NavItem name="Home" location="/" />
-			<NavItem name="Projects" location="/projects" />
-			<NavItem name="Resume" location="/resume" />
+		<nav className="flex w-full gap-8 m-auto mt-6 mb-4 text-2xl font-semibold text-gray-600 lg:gap-12">
+			<NavItem name="Home" location="/" currentPage={currentPage} />
+			<NavItem name="Projects" location="/projects" currentPage={currentPage} />
+			<NavItem name="Resume" location="/resume" currentPage={currentPage} />
 		</nav>
 	);
 }
 
 function NavItem(props) {
+	const current = useMemo(() => {
+		return props.currentPage === props.name;
+	}, []);
 	return (
 		<Link href={props.location}>
-			<a className="mr-8 transition border-b-2 border-black border-opacity-0 lg:mr-12 hover:border-opacity-90">
+			<a
+				className={`transition border-b-2 border-black ${
+					current ? "border-opacity-40" : "border-opacity-0"
+				} hover:border-opacity-90`}
+			>
 				{props.name}
 			</a>
 		</Link>

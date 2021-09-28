@@ -4,6 +4,7 @@ import Header from "../components/Header.js";
 import projects from "../data/projectData.js";
 import ProjectCard from "../components/ProjectCard.js";
 import NavBar from "../components/NavBar.js";
+import Page from "../components/Page.js";
 
 function Projects() {
 	const router = useRouter();
@@ -26,28 +27,28 @@ function Projects() {
 	}, [search]);
 
 	return (
-		<div className="flex flex-col w-5/6 m-auto mb-4 max-w-7xl">
-			<Header title="Emily Bonar - Projects" />
-			<NavBar />
+		<Page title="Emily Bonar - Projects">
 			<SearchBar initialValue={query} onInput={(input) => setSearch(input)} />
-			<main className="grid grid-flow-row-dense m-auto md:grid-cols-2 xl:grid-cols-3">
-				<ProjectList projects={filteredProjects} />
-			</main>
-		</div>
+			<ProjectList projects={filteredProjects} />
+		</Page>
 	);
 }
 
 function ProjectList(props) {
-	return props.projects.map((project, index) => (
-		<ProjectCard project={project} index={index} key={index} />
-	));
+	return (
+		<div className="grid grid-flow-row-dense m-auto md:grid-cols-2 xl:grid-cols-3">
+			{props.projects.map((project, index) => (
+				<ProjectCard project={project} index={index} key={index} />
+			))}
+		</div>
+	);
 }
 
 function SearchBar(props) {
 	return (
 		<input
 			type="search"
-			className="p-3 pl-4 my-4 text-xl rounded-full outline-none focus:ring-2 ring-gray-500"
+			className="w-full p-3 pl-4 mb-4 text-xl rounded-full outline-none focus:ring-2 ring-gray-500"
 			placeholder="Search..."
 			onInput={(e) => props.onInput(e.target.value.toLowerCase())}
 			defaultValue={props.initialValue}
