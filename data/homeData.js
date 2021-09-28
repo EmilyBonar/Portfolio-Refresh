@@ -1,6 +1,7 @@
 import Logo from "../components/Logo";
 import Link from "next/link";
 import projects from "./projectData";
+import { useCallback, useState } from "react";
 
 export const socialLinks = [
 	{
@@ -92,7 +93,7 @@ function MiniProjectsCard() {
 					</h3>
 				</a>
 			</Link>
-			<div className="flex flex-wrap justify-center sm:justify-start ">
+			<div className="flex gap-4 overflow-x-scroll overflow-y-hidden flex-nowrap">
 				{projects.map((project, index) => {
 					return <MiniProject project={project} key={index} />;
 				})}
@@ -103,23 +104,23 @@ function MiniProjectsCard() {
 
 function MiniProject(props) {
 	return (
-		<div className="relative overflow-visible group">
-			<Link href={`./projects?query=${props.project.title}`}>
-				<a>
+		<Link href={`./projects?query=${props.project.title}`}>
+			<a className="flex-shrink-0 w-32 h-32 mb-4 group">
+				<div className="hidden w-full h-full p-2 bg-white rounded shadow-lg group-hover:block">
+					<p className="font-semibold text-md">{props.project.title}</p>
+					<p className="text-sm">
+						{props.project.technologies.slice(0, 4).join(" | ") +
+							(props.project.technologies.length > 4 ? " | ..." : "")}
+					</p>
+				</div>
+				<div className="w-full h-full shadow-lg">
 					<img
-						className="object-cover object-top w-24 h-24 mb-4 mr-4 transition transform rounded group-hover:scale-110 group-hover:shadow-lg"
+						className="block object-cover object-top w-full h-full rounded group-hover:hidden"
 						src={props.project.media}
 					/>
-					<div className="absolute z-10 hidden w-40 p-2 bg-white rounded shadow-lg -top-10 -left-8 group-hover:block">
-						<p className="font-semibold text-md">{props.project.title}</p>
-						<p className="text-sm">
-							{props.project.technologies.slice(0, 4).join(" | ") +
-								(props.project.technologies.length > 4 ? " | ..." : "")}
-						</p>
-					</div>
-				</a>
-			</Link>
-		</div>
+				</div>
+			</a>
+		</Link>
 	);
 }
 
