@@ -70,10 +70,9 @@ function AboutCard() {
 				<a href="https://www.recurse.com/" className="hover:text-blue-600">
 					<SemiBold text="Recurse Center" />
 				</a>{" "}
-				where I honed my web development skills, and I am now looking for a{" "}
-				<SemiBold text="Front-End" /> or{" "}
-				<SemiBold text="Full-Stack Developer" /> job, preferably in{" "}
-				<SemiBold text="Austin, TX" /> or remote.
+				where I honed my web development skills, and am currently working
+				remotely as a <SemiBold text="Front-End Developer" /> at{" "}
+				<SemiBold text="HPE" />.
 			</p>
 			<p>
 				Outside of tech, my interests involve reading, cooking, baking, and
