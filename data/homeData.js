@@ -105,18 +105,18 @@ function MiniProject(props) {
 	return (
 		<Link href={`./projects?query=${props.project.title}`}>
 			<a className="flex-shrink-0 w-32 h-32 mb-4 group">
-				<div className="hidden w-full h-full p-2 bg-white rounded shadow-lg group-hover:block">
+				<div className="w-full h-full shadow-lg">
+					<img
+						className="block object-cover object-top w-full h-full rounded"
+						src={props.project.media}
+					/>
+				</div>
+				<div className="relative w-full h-full p-2 bg-white rounded shadow-lg opacity-0 top-[-100%] bg-opacity-90 group-hover:opacity-100">
 					<p className="font-semibold text-md">{props.project.title}</p>
 					<p className="text-sm">
 						{props.project.technologies.slice(0, 4).join(" | ") +
 							(props.project.technologies.length > 4 ? " | ..." : "")}
 					</p>
-				</div>
-				<div className="w-full h-full shadow-lg">
-					<img
-						className="block object-cover object-top w-full h-full rounded group-hover:hidden"
-						src={props.project.media}
-					/>
 				</div>
 			</a>
 		</Link>
