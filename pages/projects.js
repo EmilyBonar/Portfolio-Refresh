@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import Header from "../components/Header.js";
 import projects from "../data/projectData.js";
 import ProjectCard from "../components/ProjectCard.js";
-import NavBar from "../components/NavBar.js";
 import Page from "../components/Page.js";
 
 function Projects() {
@@ -27,7 +25,7 @@ function Projects() {
 	}, [search]);
 
 	return (
-		<Page title="Emily Bonar - Projects">
+		<Page title='Emily Bonar - Projects'>
 			<SearchBar initialValue={query} onInput={(input) => setSearch(input)} />
 			<ProjectList projects={filteredProjects} />
 		</Page>
@@ -36,7 +34,7 @@ function Projects() {
 
 function ProjectList(props) {
 	return (
-		<div className="grid grid-flow-row-dense m-auto md:grid-cols-2 xl:grid-cols-3">
+		<div className='grid grid-flow-row-dense m-auto md:grid-cols-2 xl:grid-cols-3'>
 			{props.projects.map((project, index) => (
 				<ProjectCard project={project} index={index} key={index} />
 			))}
@@ -47,9 +45,9 @@ function ProjectList(props) {
 function SearchBar(props) {
 	return (
 		<input
-			type="search"
-			className="w-full p-3 pl-4 mb-4 text-xl rounded-full outline-none focus:ring-2 ring-gray-500"
-			placeholder="Search..."
+			type='search'
+			className='w-full p-3 pl-4 mb-4 text-xl rounded-full outline-none focus:ring-2 ring-gray-500'
+			placeholder='Search...'
 			onInput={(e) => props.onInput(e.target.value.toLowerCase())}
 			defaultValue={props.initialValue}
 		></input>

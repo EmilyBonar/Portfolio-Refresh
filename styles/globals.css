@@ -13,3 +13,7 @@
 strong {
 	@apply inline-block font-semibold transition transform hover:-translate-y-0.5;
 }
+
+a strong {
+	@apply hover:text-blue-600;
+}
