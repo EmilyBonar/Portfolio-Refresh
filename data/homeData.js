@@ -1,7 +1,7 @@
 import Logo from "../components/Logo";
 import Link from "next/link";
 import projects from "./projectData";
-import { useCallback, useState } from "react";
+import React from "react";
 
 export const socialLinks = [
 	{
@@ -53,26 +53,26 @@ function AboutCard() {
 			<p className="mb-3">
 				I graduated from{" "}
 				<a href="https://www.rice.edu/" className="hover:text-blue-600">
-					<SemiBold text="Rice University" />
+					<strong>Rice University</strong>
 				</a>{" "}
 				in 2018 with a degree in Materials Science and Nanoengineering and a
-				specialization in <SemiBold text="3D Printing" />. Since then I have
-				been working as a <SemiBold text="Software Developer" /> at the Army
-				Research Lab.
+				specialization in <strong>3D Printing</strong>. Since then I've switched
+				focus to <strong>Front-End Development</strong> and making websites
+				(like this one!).
 			</p>
 			<p className="mb-3">
 				The first piece of programming I can remember was making a calulator in{" "}
-				<SemiBold text="Python" /> in 7th grade to help with math homework.
-				Since then, I've been solving problems using <SemiBold text="MATLAB" />,{" "}
-				<SemiBold text="LabVIEW" />, and more recently, making things using
-				tools like <SemiBold text="React" />, <SemiBold text="TailwindCSS" />,
-				and <SemiBold text="TypeScript" />. I recently finished a batch at the{" "}
+				<strong>Python</strong> in 7th grade to help with math homework. Since
+				then, I've been solving problems using <strong>MATLAB</strong>,{" "}
+				<strong>LabVIEW</strong>, and more recently, making things using tools
+				like <strong>React</strong>, <strong>TailwindCSS</strong>, and{" "}
+				<strong>TypeScript</strong>. I finished a batch at the{" "}
 				<a href="https://www.recurse.com/" className="hover:text-blue-600">
-					<SemiBold text="Recurse Center" />
+					<strong>Recurse Center</strong>
 				</a>{" "}
 				where I honed my web development skills, and am currently working
-				remotely as a <SemiBold text="Front-End Developer" /> at{" "}
-				<SemiBold text="HPE" />.
+				remotely as a <strong>Front-End Developer</strong> at{" "}
+				<strong>HPE</strong>.
 			</p>
 			<p>
 				Outside of tech, my interests involve reading, cooking, baking, and
@@ -163,13 +163,5 @@ export const skills = [
 	"PostgreSQL",
 	"TypeScript",
 ];
-
-function SemiBold(props) {
-	return (
-		<span className="inline-block font-semibold transition transform hover:-translate-y-0.5">
-			{props.text}
-		</span>
-	);
-}
 
 export default cards;

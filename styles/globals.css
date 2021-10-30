@@ -9,3 +9,7 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+
+strong {
+	@apply inline-block font-semibold transition transform hover:-translate-y-0.5;
+}
