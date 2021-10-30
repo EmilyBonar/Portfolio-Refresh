@@ -149,19 +149,17 @@ function Skill(props) {
 }
 
 export const skills = [
-	"JavaScript",
-	"Node.js",
 	"React",
+	"JavaScript",
+	"TypeScript",
+	"Node.js",
 	"HTML",
 	"CSS",
 	"Python",
 	"MATLAB",
-	"LabVIEW",
-	"REST",
 	"TailwindCSS",
 	"Next.js",
 	"PostgreSQL",
-	"TypeScript",
 ];
 
 export default cards;
