@@ -1,10 +1,9 @@
 import Logo from "../components/Logo";
 import Link from "next/link";
 import projects from "./projectData";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Markdown from "markdown-to-jsx";
 import about from "./about.md";
-import Image from "next/image";
 
 export const socialLinks = [
 	{
@@ -29,9 +28,7 @@ export const cards = [
 function HeaderCard() {
 	return (
 		<header className='flex overflow-hidden rounded-l max-h-64'>
-			<div className='relative w-0 lg:w-56'>
-				<Image layout='fill' className='object-cover' src='/profPic.jpg' />
-			</div>
+			<img className='object-cover w-0 lg:w-56' src='/profPic.jpg' />
 			<div className='flex-auto p-4 text-right sm:p-8'>
 				<h1 className='my-2 text-5xl md:text-7xl'>Emily Bonar</h1>
 				<h2 className='text-xl text-gray-700 md:text-2xl'>
@@ -83,11 +80,10 @@ function MiniProject(props) {
 	return (
 		<Link href={`./projects?query=${props.project.title}`}>
 			<a className='flex-shrink-0 w-32 h-32 mb-4 group'>
-				<div className='relative w-full h-full shadow-lg'>
-					<Image
-						className='object-cover object-top rounded'
+				<div className='w-full h-full shadow-lg'>
+					<img
+						className='block object-cover object-top w-full h-full rounded'
 						src={props.project.media}
-						layout='fill'
 					/>
 				</div>
 				<div className='relative w-full h-full p-2 bg-white rounded shadow-lg opacity-0 top-[-100%] bg-opacity-90 group-hover:opacity-100'>
