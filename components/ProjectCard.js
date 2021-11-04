@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Logo from "./Logo";
 import AnimatedCard from "./AnimatedCard";
 
@@ -6,12 +7,16 @@ export function ProjectCard(props) {
 	return (
 		<AnimatedCard index={props.index}>
 			<div className='flex flex-col h-full max-w-md min-h-full pb-8 m-auto overflow-hidden transition transform bg-white rounded-lg shadow-lg hover:-translate-y-2 md:mx-2'>
-				<a href={props.project.liveLink} target='_blank'>
-					<img
+				<a
+					href={props.project.liveLink}
+					target='_blank'
+					className='relative w-full h-64'
+				>
+					<Image
 						src={props.project.media}
-						className='object-cover object-top w-full h-64'
+						className='object-cover object-top'
 						alt={`Hero image for ${props.project.title}`}
-						width='256'
+						layout='fill'
 					/>
 				</a>
 				<div className='flex flex-col h-1/2'>
