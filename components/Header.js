@@ -24,6 +24,7 @@ export function Header(props) {
 				href="/favicon-16x16.png"
 			></link>
 			<link rel="manifest" href="/site.webmanifest"></link>
+			<meta name="theme-color" content="#98d9d8"/>
 		</Head>
 	);
 }
