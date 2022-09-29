@@ -1,6 +1,10 @@
 {
-	"name": "next-starter-jamstack",
+	"name": "portfolio-refresh",
 	"version": "0.1.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/EmilyBonar/Portfolio-Refresh.git"
+	},
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build && next export",
