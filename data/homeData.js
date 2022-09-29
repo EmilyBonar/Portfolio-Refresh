@@ -1,9 +1,10 @@
 import Logo from "../components/Logo";
 import Link from "next/link";
 import projects from "./projectData";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Markdown from "markdown-to-jsx";
 import about from "./about.md";
+import Image from "next/future/image";
 
 export const socialLinks = [
 	{
@@ -81,9 +82,12 @@ function MiniProject(props) {
 		<Link href={`./projects?query=${props.project.title}`}>
 			<a className='flex-shrink-0 w-32 h-32 mb-4 group'>
 				<div className='w-full h-full shadow-lg'>
-					<img
+					<Image
 						className='block object-cover object-top w-full h-full rounded'
 						src={props.project.media}
+						width={128}
+						height={128}
+						alt={`Link to ${props.project.title}`}
 					/>
 				</div>
 				<div className='relative w-full h-full p-2 bg-white rounded shadow-lg opacity-0 top-[-100%] bg-opacity-90 group-hover:opacity-100'>

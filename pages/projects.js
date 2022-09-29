@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import projects from "../data/projectData.js";
+import projects from "../data/projectData.ts";
 import ProjectCard from "../components/ProjectCard.js";
 import Page from "../components/Page.js";
 

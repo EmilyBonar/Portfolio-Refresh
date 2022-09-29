@@ -1,4 +1,13 @@
-export const projects = [
+interface Project {
+	title: string;
+	media: string;
+	technologies: string[];
+	copy: string;
+	gitLink?: string;
+	liveLink?: string;
+}
+
+export const projects: Project[] = [
 	{
 		title: "Rainbow",
 		media: "/rainbow.png",
